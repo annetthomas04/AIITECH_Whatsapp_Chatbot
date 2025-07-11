@@ -1,0 +1,122 @@
+/* Base Layout */
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #f4f4f4;
+    color: #111;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Chat Container */
+#chatbox {
+    width: 100%;
+    max-width: 600px;
+    height: 360px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Message Bubbles */
+.bot, .user {
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin: 6px 0;
+    max-width: 80%;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.bot {
+    background-color: #0848b6;
+    color: #ffffff;
+    margin-right: auto;
+}
+
+.user {
+    background-color: #e0e0e0;
+    color: #111;
+    margin-left: auto;
+    text-align: right;
+}
+
+/* Input & Buttons */
+#inputSection {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+#userInput, #fileInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 13px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+#sendBtn, #uploadBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#sendBtn:hover, #uploadBtn:hover {
+    background-color: #000;
+}
+
+
+/* Button Options */
+.btn-group {
+    margin-top: 10px;
+}
+
+.btn-group button {
+    background-color: #f0f0f0;
+    border: 1px solid #bbb;
+    color: #222;
+    padding: 6px 12px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-group button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    #chatbox {
+        height: 300px;
+    }
+
+    #userInput, #fileInput {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    #sendBtn, #uploadBtn {
+        width: 100%;
+        margin-left: 0;
+    }
+}
